@@ -2807,6 +2807,17 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
+"@nteract/actions@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@nteract/actions/-/actions-4.0.0.tgz#e3860843aaa15a588065ddf03262f2ff78ecd996"
+  integrity sha512-pNwC53ZIP5b8LWKdrWm+b6mEDGesXnRG+88RF33h3H7aXSMzquX2l++uPRZulN/6ow3sG5QBz8CAmTayAakj7w==
+  dependencies:
+    "@nteract/commutable" "^7.2.6"
+    "@nteract/messaging" "^7.0.0"
+    "@nteract/types" "^6.0.0"
+    immutable "^4.0.0-rc.12"
+    rx-jupyter "^5.5.2"
+
 "@nteract/any-vega@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@nteract/any-vega/-/any-vega-1.0.1.tgz#d790774bdc453bc5af663455747637a2100f634a"
@@ -2819,6 +2830,19 @@
   dependencies:
     immutable "^4.0.0-rc.12"
     uuid "^3.1.0"
+
+"@nteract/core@^13.0.0":
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/@nteract/core/-/core-13.0.0.tgz#2ef8a0e76b2bcf6194000e648902cc98fbb041dd"
+  integrity sha512-JqvuO4NAoX1cux2LkVexGPbdGMKqjxmt3Jmt0aj+LqFkmffedrxk9m+VLKieBz2B/qUu4h4dKdHiQ8CRT8p35A==
+  dependencies:
+    "@nteract/actions" "^4.0.0"
+    "@nteract/commutable" "^7.2.6"
+    "@nteract/epics" "^4.0.2"
+    "@nteract/reducers" "^3.1.0"
+    "@nteract/selectors" "^2.8.3"
+    "@nteract/types" "^6.0.0"
+    redux-logger "^3.0.6"
 
 "@nteract/data-explorer@^8.0.0":
   version "8.0.2"
@@ -2855,10 +2879,40 @@
   dependencies:
     react-hot-loader "^4.1.2"
 
+"@nteract/epics@^4.0.2":
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/@nteract/epics/-/epics-4.0.2.tgz#b881735d0a6da2bf490d1d8baa03104c0a26c2f3"
+  integrity sha512-vLGkBk3GvcQkMVDtc+uXrJ413M81m3RZmSyjLqktGelA0t88VYBGVn7oZlX2s9gTRnN9gihCGAbCy3uqjqx6Qw==
+  dependencies:
+    "@nteract/actions" "^4.0.0"
+    "@nteract/commutable" "^7.2.6"
+    "@nteract/messaging" "^7.0.0"
+    "@nteract/mythic-notifications" "^0.1.2-alpha.0"
+    "@nteract/selectors" "^2.8.3"
+    "@nteract/types" "^6.0.0"
+    file-saver "^2.0.0"
+    redux "^4.0.1"
+    redux-observable "^1.0.0"
+    rx-jupyter "^5.5.2"
+    rxjs "^6.3.3"
+
 "@nteract/examples@3.2.0":
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/@nteract/examples/-/examples-3.2.0.tgz#7cf20e3ea54ea87fa6cff0c135c45b023975ea38"
   integrity sha512-g/NXjsVHeGMq4EA8uZhMixrgH8cFg0d6Wa113fd//lRxvv673Hxf916s4BTcMf/eJySNRmk+70qQowt7kO8Jtw==
+
+"@nteract/jupyter-widgets@^4.4.11":
+  version "4.4.11"
+  resolved "https://registry.yarnpkg.com/@nteract/jupyter-widgets/-/jupyter-widgets-4.4.11.tgz#35ac5737ffe7acc1313930e56b69a107a768d515"
+  integrity sha512-HM8It7Q8AbLlqLH921uAjK7wjnXkjdUi2YMCzuTRS9uhbL42SBdqkkfUyZjhKWw+eeyMcY5NLmtLFdb/0UzSAA==
+  dependencies:
+    "@jupyter-widgets/controls" "^1.5.2"
+    "@nteract/core" "^13.0.0"
+    "@nteract/messaging" "^7.0.0"
+    font-awesome "^4.7.0"
+    immutable "^4.0.0-rc.12"
+    jquery "^3.4.1"
+    jquery-ui "^1.12.1"
 
 "@nteract/logos@^1.0.0":
   version "1.0.0"
@@ -2901,6 +2955,24 @@
     rxjs "^6.3.3"
     uuid "^3.1.0"
 
+"@nteract/mythic-notifications@^0.1.2-alpha.0":
+  version "0.1.2-alpha.0"
+  resolved "https://registry.yarnpkg.com/@nteract/mythic-notifications/-/mythic-notifications-0.1.2-alpha.0.tgz#4cde8fa6aacc1d6cf0633d7f37d67df357f09c20"
+  integrity sha512-OEns20I9uXDbwj1IuwwmdT8OYSLMngZrQ4U0+17EAUF/9pWMUCdGAgWyczTfGayyeYwqqBSoHNPppllBXRln+A==
+  dependencies:
+    "@blueprintjs/core" "^3.7.0"
+    "@nteract/myths" "^0.1.2-alpha.0"
+
+"@nteract/myths@^0.1.2-alpha.0":
+  version "0.1.2-alpha.0"
+  resolved "https://registry.yarnpkg.com/@nteract/myths/-/myths-0.1.2-alpha.0.tgz#2e83e7336c338c7509ce8162c2fb841b5224bd68"
+  integrity sha512-vH2hlOvv4NRjpfdDWQI7HaL+LthjBrFJtLFmf7/hwAURQaLvWPU0/4YsmdLmwPX9eDXTlwXzZjBopu0Sm/fH9Q==
+  dependencies:
+    react-redux "^6.0.0"
+    redux "^4.0.0"
+    redux-observable "^1.0.0"
+    rxjs "^6.3.3"
+
 "@nteract/octicons@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@nteract/octicons/-/octicons-2.0.0.tgz#eccd5de8bc0ef4d1bb4154b791db80f4f6bac995"
@@ -2924,6 +2996,78 @@
     "@blueprintjs/core" "^3.7.0"
     "@blueprintjs/select" "^3.2.0"
     react-syntax-highlighter "^12.0.0"
+
+"@nteract/presentational-components@^3.3.7":
+  version "3.3.7"
+  resolved "https://registry.yarnpkg.com/@nteract/presentational-components/-/presentational-components-3.3.7.tgz#14830310fc97f2f39691eb1402760b9dbccaa61f"
+  integrity sha512-Bu1gnTul71lqd4gzB6KIHZ7i38XGyHc9Zyi2JA/haqf1aJsQwCQhZqGhDGpYv4o5UE294SNH0hCbDdlJBewPVg==
+  dependencies:
+    "@blueprintjs/core" "^3.7.0"
+    "@blueprintjs/select" "^3.2.0"
+    react-syntax-highlighter "^12.0.0"
+
+"@nteract/reducers@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@nteract/reducers/-/reducers-3.1.0.tgz#78438ec026537a8b1fbf8b6157d3b1114d2302e9"
+  integrity sha512-yFDD3m/dh8hrXxq7MWMkKKmaV6su2hql0nASTNonP806o7IgE2W7x6tZIlN6Y0y9TysKf7roS6gdv6369/K3Tw==
+  dependencies:
+    "@nteract/actions" "^4.0.0"
+    "@nteract/commutable" "^7.2.6"
+    "@nteract/types" "^6.0.0"
+    escape-carriage "^1.3.0"
+    immutable "^4.0.0-rc.12"
+    lodash.has "^4.5.2"
+    redux "^4.0.1"
+    redux-immutable "^4.0.0"
+    uuid "^3.3.2"
+
+"@nteract/selectors@^2.8.3":
+  version "2.8.3"
+  resolved "https://registry.yarnpkg.com/@nteract/selectors/-/selectors-2.8.3.tgz#122b6dfd0f6bf5688ae76e73d8ba966dd1bd8d03"
+  integrity sha512-RkGCSOqPP8OQ5CHydCL0WOIaxVDTyvPKSVPmdBZCA/Y/Q4b+KWkA+aVNVr+k5zCg+nzhCIXpG019rcVQ2UY+vw==
+  dependencies:
+    "@nteract/commutable" "^7.2.6"
+    "@nteract/types" "^6.0.0"
+    immutable "^4.0.0-rc.12"
+    reselect "^4.0.0"
+    rx-jupyter "^5.5.2"
+
+"@nteract/transform-geojson@^5.1.12":
+  version "5.1.12"
+  resolved "https://registry.yarnpkg.com/@nteract/transform-geojson/-/transform-geojson-5.1.12.tgz#9299079d9dc09bfe4361b869db737966a988cbfd"
+  integrity sha512-cHIoLnSDugVM1UHDP2/AeybvlrGv6GxmAY+QiEyBuqVzpXeRCpVZGgeyJ2EZWfm3HkJi8RKNf/zj7cEH+tQqlQ==
+  dependencies:
+    "@types/leaflet" "^1.5.12"
+    geojson "^0.5.0"
+    leaflet "^1.3.4"
+
+"@nteract/transform-model-debug@^5.0.1":
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/@nteract/transform-model-debug/-/transform-model-debug-5.0.1.tgz#989a7407c118789223e633e491e9e1b82e6381c4"
+  integrity sha512-R5kb75pAFhPYSr2X7zP2oGAOld9uKPboUyWmp6C00RJWu9cu/Wi27SgfcAe7neD8MsIovTR4wrd90Gk4PNtEnA==
+
+"@nteract/transform-plotly@^6.1.10":
+  version "6.1.10"
+  resolved "https://registry.yarnpkg.com/@nteract/transform-plotly/-/transform-plotly-6.1.10.tgz#76cd3ed2f9d1781a20b37e86cee518e2c8e9a652"
+  integrity sha512-kXG/m3buMsF/Qa5lByV+cNTpQH3jE2+MFFismNEzJbHfgvReutl8M0oKPRUhD48Zld6jmwBuuUPVUpD3w28/mg==
+  dependencies:
+    lodash.clonedeep "^4.5.0"
+    plotly.js-dist "^1.51.3"
+
+"@nteract/transform-vdom@^4.0.15":
+  version "4.0.15"
+  resolved "https://registry.yarnpkg.com/@nteract/transform-vdom/-/transform-vdom-4.0.15.tgz#cad56590f91377a5db0aa3e9a3e7d53de4c9bb1d"
+  integrity sha512-eI5bIsrKGrWlkKWRQLZrGMTBqm/mst/433bxe59nUunqmzfHlzfAqA8lPkeXDMp9jVGc0qDEmQfly/DFO4DrFA==
+  dependencies:
+    lodash.clonedeep "^4.5.0"
+
+"@nteract/transform-vega@^7.0.10":
+  version "7.0.10"
+  resolved "https://registry.yarnpkg.com/@nteract/transform-vega/-/transform-vega-7.0.10.tgz#d41fde6baa4f89e46fb31ee8f7260e3da98fbf15"
+  integrity sha512-ntMyB1idGTwE5feipb0p1d8T5yNyU3z4E/B1l2uzhWV3AY9KirDnrFaRJqY47SUIjKBTZ8ZM8+QlTIZiAdJxHg==
+  dependencies:
+    "@nteract/any-vega" "^1.0.1"
+    "@nteract/presentational-components" "^3.3.7"
 
 "@nteract/types@^6.0.0":
   version "6.0.0"
@@ -3380,12 +3524,12 @@
   dependencies:
     "@types/geojson" "*"
 
-"@types/lodash.clonedeep@^4.5.6":
-  version "4.5.6"
-  resolved "https://registry.yarnpkg.com/@types/lodash.clonedeep/-/lodash.clonedeep-4.5.6.tgz#3b6c40a0affe0799a2ce823b440a6cf33571d32b"
-  integrity sha512-cE1jYr2dEg1wBImvXlNtp0xDoS79rfEdGozQVgliDZj1uERH4k+rmEMTudP9b4VQ8O6nRb5gPqft0QzEQGMQgA==
+"@types/leaflet@^1.5.12":
+  version "1.5.12"
+  resolved "https://registry.yarnpkg.com/@types/leaflet/-/leaflet-1.5.12.tgz#9953b7e47a53e0a70cdd7a903a43dc3c343cf623"
+  integrity sha512-61HRMIng+bWvnnAIqUWLBlrd/TQZc4gU+gN1JL4K47EDtwIrcMEhWgi7PdcpbG1YmpH4F0EfOimkvV82gJIl9w==
   dependencies:
-    "@types/lodash" "*"
+    "@types/geojson" "*"
 
 "@types/lodash.debounce@^4.0.6":
   version "4.0.6"
@@ -8546,6 +8690,11 @@ gensync@^1.0.0-beta.1:
   version "1.0.0-beta.1"
   resolved "https://registry.yarnpkg.com/gensync/-/gensync-1.0.0-beta.1.tgz#58f4361ff987e5ff6e1e7a210827aa371eaac269"
   integrity sha512-r8EC6NO1sngH/zdD9fiRDLdcgnbayXah+mLgManTaIZJqEC1MZstmnox8KpnI2/fxQwrp5OpCOYWLp4rBl4Jcg==
+
+geojson@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/geojson/-/geojson-0.5.0.tgz#3cd6c96399be65b56ee55596116fe9191ce701c0"
+  integrity sha1-PNbJY5m+ZbVu5VWWEW/pGRznAcA=
 
 get-caller-file@^1.0.1, get-caller-file@^1.0.2:
   version "1.0.3"
@@ -15792,6 +15941,19 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   integrity sha1-6Eg5bwV9Ij8kOGkkYY4laUFh7Ec=
   dependencies:
     aproba "^1.1.1"
+
+rx-jupyter@^5.5.2:
+  version "5.5.2"
+  resolved "https://registry.yarnpkg.com/rx-jupyter/-/rx-jupyter-5.5.2.tgz#5156c789bebd521f80cda6c1ab9a9bef0a7d8891"
+  integrity sha512-gjC+0RRC53lldvUAVDdi1mMR4uXbfL0Yexyme1mw35yLdMFOrlA8KaUO+YNILzwUWP1ywtBVNzfftRp1t00DRw==
+  dependencies:
+    "@nteract/commutable" "^7.2.6"
+    "@nteract/messaging" "^7.0.0"
+    "@types/ungap__url-search-params" "^0.1.0"
+    "@ungap/url-search-params" "^0.1.2"
+    js-cookie "^2.2.0"
+    rxjs "^6.3.3"
+    url-join "^4.0.0"
 
 rxjs@^6.3.1, rxjs@^6.3.3, rxjs@^6.5.2:
   version "6.5.3"

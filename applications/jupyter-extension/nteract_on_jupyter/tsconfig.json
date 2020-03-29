@@ -17,15 +17,10 @@
     { "path": "../../../packages/connected-components" },
     { "path": "../../../packages/core" },
     { "path": "../../../packages/editor" },
-    { "path": "../../../packages/jupyter-widgets" },
     { "path": "../../../packages/monaco-editor" },
     { "path": "../../../packages/notebook-app-component" },
     { "path": "../../../packages/presentational-components" },
     { "path": "../../../packages/styles" },
-    { "path": "../../../packages/transform-geojson" },
-    { "path": "../../../packages/transform-model-debug" },
-    { "path": "../../../packages/transform-plotly" },
-    { "path": "../../../packages/transform-vega" },
     { "path": "../../../packages/types" }
   ]
 }

@@ -11,7 +11,6 @@
     { "path": "fs-observable" },
     { "path": "fixtures" },
     { "path": "host-cache" },
-    { "path": "jupyter-widgets" },
     { "path": "markdown" },
     { "path": "messaging" },
     { "path": "monaco-editor" },
@@ -24,11 +23,6 @@
     { "path": "rx-jupyter" },
     { "path": "selectors" },
     { "path": "stateful-components" },
-    { "path": "transform-geojson" },
-    { "path": "transform-model-debug" },
-    { "path": "transform-plotly" },
-    { "path": "transform-vdom" },
-    { "path": "transform-vega" },
     { "path": "types" }
   ]
 }
